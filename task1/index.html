@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1.1: jQuery Implementation</tytle>
+    <style>
+        /* стиль для подсветки */
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        body {padding: 20px; font-family:sans-serif;}
+    </style>
+</head>
+<body>
+
+    <button id="toggleBtn">Toggle Highlight</button>
+    <p id="targetText">Этот текст меняет цвет императивно.</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //Используем camelCase для именования переменных 
+            const $toggleBtn = $('#toggleBtn');
+            const $targetText = $('#targetText');
+
+            //Императивынй подход: вешаем обработчик события клика 
+            $toggleBtn.on('click', function(){
+                //Прямая манипуляция DOM: переключаем класс
+                $targetText.toggleClass('highlight');
+            });
+        });
+    </script>
+</body>
+</html>
