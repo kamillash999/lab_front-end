@@ -1,0 +1,17 @@
+import { Skill } from '../../types';
+
+interface SkillListProps {
+  skills: Skill[];
+}
+
+export const SkillList = ({ skills }: SkillListProps) => {
+  return (
+    <ul>
+      {skills.map((skill) => (
+        <li key={skill.id}>
+          {skill.name} — <strong>{skill.level}</strong>
+        </li>
+      ))}
+    </ul>
+  );
+};
