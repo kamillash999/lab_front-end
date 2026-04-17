@@ -1,0 +1,49 @@
+/* баз стили прил */
+
+bode {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* навигация*/
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #2c3e50;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+
+}
+
+/* контент обл */
+main {
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: white;
+
+}
+
+button:hover {
+    background: #f0f0f0;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    color: #7f8c8d;
+    
+}
